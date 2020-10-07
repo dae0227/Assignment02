@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javacript Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <h1>My To Do List</h1>
+        <div class="wrapform">
+            <form name="todoform" id="todoform">
+                <div class="label">To Do</div>
+              <textarea name="todo" id="todo" rows="5"></textarea>
+                <div class="label">Priority Level</div>
+                <div class="radio">
+                    <input type="radio" name="priority" value="1"/><label>1st</label>
+                    <input type="radio" name="priority" value="2"/><label>2nd</label>
+                    <input type="radio" name="priority" value="3"/><label>3rd</label>
+                    <input type="radio" name="priority" value="4"/><label>4th</label>
+                    <input type="radio" name="priority" value="5"/><label>5th</label>
+                </div>
+                <div class="cmd">
+                    <input type="button" name="save" value="Submit">
+                    <input type="button" name="reset" value="Delete Content"/>
+                </div>
+            </form>
+        </div>
+    </div>        
+
+    <section class="section entry-content">
+        <div class="todo">
+            <div class="title">To Do List</div>
+            <div class="content"></div>
+        </div>
+        <div class="doing">
+            <div class="title">In Progress</div>
+            <div class="content"></div>
+        </div>
+        <div class="done">
+            <div class="title">Completed</div>
+            <div class="content"></div>
+        </div>
+    </section>
+
+    <script type="template" id="newitem">
+        <div class="item">
+        <h3 class="todo"></h3>
+        <span class="date"></span>
+        <span class="priority"></span>
+        <span class="moveitem">>></span>
+        </div>
+    </script>
+</body>
+<script src="main.js"></script>
+</html>
